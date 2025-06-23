@@ -26,8 +26,14 @@ SECRET_KEY = "django-insecure-6qa#4)l242#&_x@2b7g+m2pk6b)6go$lle*ll0e5ky_w%r+jr)
 DEBUG = True
 
 
-# Allow all hosts
-ALLOWED_HOSTS = ['*']
+# Allow codespace and localhost hosts
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'obscure-carnival-p7vg76qjpc7577-8000.app.github.dev',
+    '.app.github.dev',
+    '*',
+]
 
 
 # Application definition
