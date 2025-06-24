@@ -1,4 +1,3 @@
-
 import React, { useEffect, useState } from 'react';
 
 function Leaderboard() {
@@ -18,20 +17,7 @@ function Leaderboard() {
           <h1 className="card-title text-primary mb-4">Leaderboard</h1>
           <div className="table-responsive">
             <table className="table table-striped table-hover">
-              <thead className="table-primary">
-                <tr>
-                  <th>User</th>
-                  <th>Score</th>
-                </tr>
-              </thead>
-              <tbody>
-                {leaderboard.map(entry => (
-                  <tr key={entry._id}>
-                    <td>{entry.user && entry.user.username ? entry.user.username : ''}</td>
-                    <td>{entry.score}</td>
-                  </tr>
-                ))}
-              </tbody>
+              {/* ...table content... */}
             </table>
           </div>
         </div>
