@@ -1,0 +1,138 @@
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #e0f7fa 0%, #b2ebf2 100%);
+  margin: 0;
+  padding: 0;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+
+.card {
+  padding: 2em;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  background: #fff;
+  border: 1px solid #b2ebf2;
+}
+
+.card-title {
+  color: #00796b;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.navbar {
+  background: linear-gradient(90deg, #00796b 0%, #26c6da 100%);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+}
+.navbar-brand {
+  color: #fff !important;
+  font-weight: bold;
+  font-size: 1.7rem;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+}
+.navbar-brand img {
+  height: 40px;
+  margin-right: 12px;
+}
+.navbar-nav .nav-link {
+  color: #fff !important;
+  font-weight: 500;
+  margin-right: 1rem;
+  transition: color 0.2s;
+}
+.navbar-nav .nav-link:hover {
+  color: #004d40 !important;
+}
+
+.table {
+  background: #e0f7fa;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.table th {
+  background: #26c6da;
+  color: #fff;
+  font-size: 1.1rem;
+}
+.table-striped > tbody > tr:nth-of-type(odd) {
+  background-color: #b2ebf2;
+}
+.table-hover tbody tr:hover {
+  background-color: #80deea;
+}
+
+.btn, .btn-primary {
+  background: linear-gradient(90deg, #00796b 0%, #26c6da 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.btn:hover, .btn-primary:hover {
+  background: linear-gradient(90deg, #004d40 0%, #00bcd4 100%);
+  color: #fff;
+}
+
+a {
+  color: #00796b;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+a:hover {
+  color: #004d40;
+  text-decoration: underline;
+}
+
+h1, h2, h3, h4, h5 {
+  color: #00796b;
+  font-family: 'Roboto', sans-serif;
+}
+
+.octofit-logo {
+  height: 40px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.read-the-docs {
+  color: #888;
+}
