@@ -5,7 +5,7 @@ function Leaderboard() {
   const [leaderboard, setLeaderboard] = useState([]);
 
   useEffect(() => {
-    fetch('https://obscure-carnival-p7vg76qjpc7577-8000.app.github.dev/api/leaderboard/')
+    fetch('https://obscure-carnival-p7vg76qjpc7577-8000.app.github.dev/api/leaderboard/?format=api')
       .then(response => response.json())
       .then(data => setLeaderboard(data))
       .catch(error => console.error('Error fetching leaderboard:', error));

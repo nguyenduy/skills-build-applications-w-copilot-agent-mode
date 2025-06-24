@@ -5,7 +5,7 @@ function Teams() {
   const [teams, setTeams] = useState([]);
 
   useEffect(() => {
-    fetch('https://obscure-carnival-p7vg76qjpc7577-8000.app.github.dev/api/teams/')
+    fetch('https://obscure-carnival-p7vg76qjpc7577-8000.app.github.dev/api/teams/?format=api')
       .then(response => response.json())
       .then(data => setTeams(data))
       .catch(error => console.error('Error fetching teams:', error));

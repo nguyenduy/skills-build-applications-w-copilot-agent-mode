@@ -5,7 +5,7 @@ function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
-    fetch('https://obscure-carnival-p7vg76qjpc7577-8000.app.github.dev/api/users/')
+    fetch('https://obscure-carnival-p7vg76qjpc7577-8000.app.github.dev/api/users/?format=api')
       .then(response => response.json())
       .then(data => setUsers(data))
       .catch(error => console.error('Error fetching users:', error));
